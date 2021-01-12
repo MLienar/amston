@@ -1,73 +1,35 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        amston-site
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+    <div class="container">
+        <navBar />
+        <div class="main-content">
+            <sideBar />
+            <contentBox />
+        </div>
     </div>
-  </div>
 </template>
 
 <script>
-export default {}
+
+    import navBar from '../components/common/navBar'
+    import sideBar from '../components/common/sideBar'
+    import contentBox from '../components/home/contentBox'
+
+    export default {
+      components: {
+        navBar,
+        sideBar,
+        contentBox
+      }
+
+    }
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
+<style lang="scss">
+  .main-content {
+    background: linear-gradient(241.39deg, rgba(203, 243, 255, 0.66) 16.5%, rgba(217, 207, 255, 0.94) 38.65%, rgba(207, 234, 255, 0.728215) 63.24%, rgba(193, 107, 223, 0.43) 76.88%);
+    height: 88vh;
+    width: 100vw;
+    display: flex;
+    flex-flow: row nowrap;
+  }
 </style>
