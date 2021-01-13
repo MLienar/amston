@@ -7,17 +7,18 @@
 </template>
 
 <script>
-
 import splashText from '../home/splashText'
 import songSlider from '../home/songSlider'
+
 
 export default {
     name: 'contentBox',
     components: {
         splashText,
         songSlider,
-        }
+        },
 }
+
 </script>
 
 <style lang="scss">

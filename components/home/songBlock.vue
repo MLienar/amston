@@ -2,7 +2,7 @@
     <div class="song-block">
         <div class="album-cover">
             <div class="album-overlay"></div>
-            <div class="play-button">
+            <div class="play-button" @click="playSound">
                 <img src="~assets/play.svg" alt="play-button">
             </div>
             <img src="~assets/papillon.jpg" alt="couverture">
@@ -14,8 +14,21 @@
 </template>
 
 <script>
+const {Howl, Howler} = require('howler');
+
 export default {
-    name: 'songBlock'
+    name: 'songBlock',
+    data() {
+        return {
+            song: "http://matheolienard.fr/aura.mp3"
+        }
+    },
+    methods: {
+        playSound() {
+            var sound = new Audio(this.song);
+            sound.play();
+        }
+    },
 }
 </script>
 

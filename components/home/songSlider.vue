@@ -19,10 +19,10 @@ export default {
         return {
             sliderIsOpen: false,
             sliderTl: gsap.timeline( {paused: true} ),
-            previewTl: gsap.timeline( {paused: true} ),
-
+            previewTl: gsap.timeline( {paused: true} )
         }
     },
+    
     components: {
         textArrow,
         songBlock
