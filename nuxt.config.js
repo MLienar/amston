@@ -11,7 +11,7 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Poor+Story&family=Poppins:wght@300;400&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Indie+Flower&family=Poppins:wght@300;400&display=swap",
       }
     ]
   },

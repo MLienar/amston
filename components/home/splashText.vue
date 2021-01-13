@@ -2,13 +2,13 @@
     <div class="splash-text">
         <div class="hero-text">
             <h1><span class="bodoni-text" id="hiphop">Hip-Hop</span>
-            <span class="poor-text" id="artist">Artist</span>
+            <span class="indie-text" id="artist">Artist</span>
             <span class="bodoni-text" id="and">&</span>
-            <span class="poor-text" id="beatmaker">Beatmaker</span></h1>
+            <span class="indie-text" id="beatmaker">Beatmaker</span></h1>
         </div>
         <div class="adress">
             <h2><span class="bodoni-text">from</span>
-            <span class="poor-text">paris</span></h2>
+            <span class="indie-text">paris</span></h2>
         </div>
     </div>  
 </template>
@@ -49,7 +49,7 @@ export default {
             .bodoni-text {
                 font-size: 0.7em;
             }
-            .poor-text {
+            .indie-text {
                 font-size: 2em;
             }
         }
@@ -57,7 +57,7 @@ export default {
         font-family: 'Bodoni Moda', sans-serif;
         
     }
-    .poor-text {
-        font-family: 'Poor Story', sans-serif;
+    .indie-text {
+        font-family: 'Indie Flower', sans-serif;
     }
 </style>
